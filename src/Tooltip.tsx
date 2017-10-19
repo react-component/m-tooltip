@@ -24,12 +24,9 @@ export interface ITooltipProps {
 class Tooltip extends Component<ITooltipProps, any> {
   static defaultProps = {
     prefixCls: 'rmc-tooltip',
-    mouseEnterDelay: 0,
     destroyTooltipOnHide: false,
-    mouseLeaveDelay: 0.1,
     align: {},
     placement: 'right',
-    trigger: ['hover'],
     arrowContent: null,
   };
 
@@ -57,7 +54,7 @@ class Tooltip extends Component<ITooltipProps, any> {
 
   render() {
     const {
-      overlayClassName, trigger,
+      overlayClassName,
       overlayStyle, prefixCls,
       children, onVisibleChange, afterVisibleChange,
       transitionName, animation,
