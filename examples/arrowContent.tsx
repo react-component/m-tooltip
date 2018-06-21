@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import Tooltip from '../src/index';
 import 'rmc-tooltip/assets/bootstrap_white.less';
 
@@ -9,7 +9,7 @@ const styles = {
   lineHeight: '40px',
   height: '40px',
   width: '80px',
-  textAlign: 'center',
+  textAlign: 'center' as any,
   background: '#f6f6f6',
   marginRight: '1em',
   marginBottom: '1em',

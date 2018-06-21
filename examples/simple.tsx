@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import Tooltip from '../src/index';
 import 'rmc-tooltip/assets/bootstrap.less';
 
 // do not use rc-tooltip/lib/placements
 import placements from '../src/placements';
 
-class Test extends Component<any, any> {
+class Test extends React.Component<any, any> {
   state = {
     destroyTooltipOnHide: false,
     placement: 'right',
