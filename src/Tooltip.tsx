@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import Trigger from 'rmc-trigger';
 import { placements } from './placements';
 
@@ -21,7 +21,7 @@ export interface ITooltipProps {
   arrowContent?: any;
 }
 
-class Tooltip extends Component<ITooltipProps, any> {
+class Tooltip extends React.Component<ITooltipProps, any> {
   static defaultProps = {
     prefixCls: 'rmc-tooltip',
     destroyTooltipOnHide: false,
